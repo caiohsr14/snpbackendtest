@@ -31,6 +31,10 @@ async function main() {
 
     app.use(bodyParser.json());
 
+    app.get("/", function (req, res) {
+        res.redirect(307, "/api-docs");
+    });
+
     app.use(require("./gh_proxy/routes"));
 
     app.use(function handleErrors(err, req, res, next) {
