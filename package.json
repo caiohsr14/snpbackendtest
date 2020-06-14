@@ -1,0 +1,32 @@
+{
+  "name": "snpbackendtest",
+  "version": "1.0.0",
+  "description": "Backend test for Shaw and Partners application",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "nodemon ./src/main",
+    "debug": "nodemon --inspect ./src/main",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caiohsr14/snpbackendtest.git"
+  },
+  "author": "Caio Rodrigues",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caiohsr14/snpbackendtest/issues"
+  },
+  "homepage": "https://github.com/caiohsr14/snpbackendtest#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "got": "^11.3.0",
+    "nodemon": "^2.0.4",
+    "swagger-jsdoc": "^4.0.0",
+    "swagger-ui-express": "^4.1.4"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  }
+}
