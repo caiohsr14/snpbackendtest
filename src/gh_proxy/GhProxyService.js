@@ -15,10 +15,10 @@ module.exports = class GhProxyService {
             });
 
             const userList = response.body;
-            var next = req.protocol + "://" + req.get("host") + req.path + "?since=";
+            var next = req.protocol + "://" + req.get("host") + req.path;
 
             if (Array.isArray(userList) && userList.length) {
-                next += userList[userList.length - 1].id;
+                next += "?since=" + userList[userList.length - 1].id;
             }
 
             return { next: next, userList: response.body };
